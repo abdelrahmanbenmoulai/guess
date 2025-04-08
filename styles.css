@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.back-button button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff7a01, #ff914d);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 122, 1, 0.3);
+}
+
+.back-button button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(255, 122, 1, 0.5);
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+
+
+.game-info {
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 2px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+}
+
+.message {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    min-height: 1.5rem;
+}
+
+.success {
+    color: #48bb78;
+}
+
+.error {
+    color: #e53e3e;
+}
+
+.attempts {
+    color: #4a5568;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.reset-btn {
+    background: #4a5568;
+}
+
+.reset-btn:hover {
+    background: #2d3748;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    input,
+    button {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+}
+
+.back-button button {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+
+.back-button button:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+}
